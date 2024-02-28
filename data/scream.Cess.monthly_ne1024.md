@@ -2,7 +2,6 @@
 ## Data from Chris Terai 
 
 ```
-(mylib) kaizhang@perlmutter:login03:/global/cfs/cdirs/e3sm/zhang40/e3sm_diags_for_EAMxx/data/Cess> cat ~/jj
 netcdf output.scream.Cess.monthly_ne1024.AVERAGE.nmonths_x1.2019-09-01-00000 {
 dimensions:
 	lat = 721 ;
