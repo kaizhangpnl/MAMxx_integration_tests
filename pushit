@@ -1,0 +1,12 @@
+#!/bin/csh 
+
+git add pushit 
+git add script
+git add data 
+git add diag
+
+git commit -m "adding files" 
+
+git push origin main 
+
+
