@@ -38,7 +38,7 @@
       aodlw(:,:) = aodlw(:,:) + aero_tau_sw(:,:,idx_nir_diag-1,ik)
    end do  
 
-   ;; ssasw is omega * tau 
+   ;; aero_ssa_sw is omega * tau 
 
    ssasw(:,:) = aero_ssa_sw(:,:,idx_sw_diag-1,nlev-1) / aero_tau_sw(:,:,idx_sw_diag-1,nlev-1) 
  
