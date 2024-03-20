@@ -42,7 +42,7 @@
 
    ssasw(:,:) = aero_ssa_sw(:,:,idx_sw_diag-1,nlev-1) / aero_tau_sw(:,:,idx_sw_diag-1,nlev-1) 
  
-   fno = "out.nc" 
+   fno = "ne4_mam4_optics_hourly.nc" 
 
    system("rm -f " + fno) 
 
