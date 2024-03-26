@@ -1,4 +1,4 @@
-## Vertical Coordinate 
+## Vertical coordinate information in EAMxx output 
 
 ## Standard information from EAM 
 
