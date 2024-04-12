@@ -21,7 +21,7 @@
    p_int = fla->p_int
    p_mid = fla->p_mid
 
-   nlev = dimsizes(p_mid(0,0,0,:)) 
+   nlev = dimsizes(p_mid(0,0,:)) 
    
    dp = p_mid
    dp = p_int(:,:,1:nlev) - p_int(:,:,0:nlev-1) 
