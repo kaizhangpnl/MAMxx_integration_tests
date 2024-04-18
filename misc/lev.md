@@ -29,7 +29,7 @@
 
 ```
 
-## EAMxx history output 
+## EAMxx history output ("lev" is a coordinate variable but not a field variable.) 
 
 ```
 netcdf scream_mamxx_ne4pg2_t05.scream.h0.AVERAGE.nmonths_x1.0001-01-01-00000 {
