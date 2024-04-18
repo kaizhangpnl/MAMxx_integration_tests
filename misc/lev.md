@@ -29,7 +29,123 @@
 
 ```
 
+## EAMxx history output 
 
+```
+netcdf scream_mamxx_ne4pg2_t05.scream.h0.AVERAGE.nmonths_x1.0001-01-01-00000 {
+dimensions:
+	time = UNLIMITED ; // (1 currently)
+	dim2 = 2 ;
+	lev = 72 ;
+	ncol_d = 866 ;
+	ilev = 73 ;
+	lwband = 16 ;
+	ncol = 384 ;
+	swband = 14 ;
+variables:
+	double time(time) ;
+		time:units = "days since 0001-01-01 00:00:00" ;
+		time:long_name = "time" ;
+		time:calendar = "noleap" ;
+		time:bounds = "time_bnds" ;
+	double time_bnds(time, dim2) ;
+		time_bnds:units = "days since 0001-01-01 00:00:00" ;
+		time_bnds:long_name = "time_bnds" ;
+		time_bnds:note = "right endpoint accumulation" ;
+	float horiz_winds(time, ncol, dim2, lev) ;
+		horiz_winds:units = "m s^-1" ;
+		horiz_winds:long_name = "horiz_winds" ;
+		horiz_winds:_FillValue = 3.402824e+33f ;
+		horiz_winds:sub_fields = "[ U, V ]" ;
+	float landfrac(time, ncol) ;
+		landfrac:units = "1" ;
+		landfrac:long_name = "landfrac" ;
+		landfrac:_FillValue = 3.402824e+33f ;
+	float ocnfrac(time, ncol) ;
+		ocnfrac:units = "1" ;
+		ocnfrac:long_name = "ocnfrac" ;
+		ocnfrac:_FillValue = 3.402824e+33f ;
+	float omega(time, ncol, lev) ;
+		omega:units = "m^-1 s^-3 kg" ;
+		omega:long_name = "omega" ;
+		omega:_FillValue = 3.402824e+33f ;
+	float p_int(time, ncol, ilev) ;
+		p_int:units = "Pa" ;
+		p_int:long_name = "p_int" ;
+		p_int:_FillValue = 3.402824e+33f ;
+	float p_mid(time, ncol, lev) ;
+		p_mid:units = "Pa" ;
+		p_mid:long_name = "p_mid" ;
+		p_mid:_FillValue = 3.402824e+33f ;
+	float ps(time, ncol) ;
+		ps:units = "Pa" ;
+		ps:long_name = "ps" ;
+		ps:_FillValue = 3.402824e+33f ;
+... ... 
+	float area_GLL(ncol_d) ;
+		area_GLL:units = "1^2" ;
+		area_GLL:long_name = "area_GLL" ;
+		area_GLL:_FillValue = 3.402824e+33f ;
+	float hyai_GLL(ilev) ;
+		hyai_GLL:units = "1" ;
+		hyai_GLL:long_name = "hyai_GLL" ;
+		hyai_GLL:_FillValue = 3.402824e+33f ;
+	float hyam_GLL(lev) ;
+		hyam_GLL:units = "1" ;
+		hyam_GLL:long_name = "hyam_GLL" ;
+		hyam_GLL:_FillValue = 3.402824e+33f ;
+	float hybi_GLL(ilev) ;
+		hybi_GLL:units = "1" ;
+		hybi_GLL:long_name = "hybi_GLL" ;
+		hybi_GLL:_FillValue = 3.402824e+33f ;
+	float hybm_GLL(lev) ;
+		hybm_GLL:units = "1" ;
+		hybm_GLL:long_name = "hybm_GLL" ;
+		hybm_GLL:_FillValue = 3.402824e+33f ;
+	float lat_GLL(ncol_d) ;
+		lat_GLL:units = "1" ;
+		lat_GLL:long_name = "lat_GLL" ;
+		lat_GLL:_FillValue = 3.402824e+33f ;
+	float lon_GLL(ncol_d) ;
+		lon_GLL:units = "1" ;
+		lon_GLL:long_name = "lon_GLL" ;
+		lon_GLL:_FillValue = 3.402824e+33f ;
+	float area_PG2(ncol) ;
+		area_PG2:units = "1^2" ;
+		area_PG2:long_name = "area_PG2" ;
+		area_PG2:_FillValue = 3.402824e+33f ;
+	float hyai_PG2(ilev) ;
+		hyai_PG2:units = "1" ;
+		hyai_PG2:long_name = "hyai_PG2" ;
+		hyai_PG2:_FillValue = 3.402824e+33f ;
+	float hyam_PG2(lev) ;
+		hyam_PG2:units = "1" ;
+		hyam_PG2:long_name = "hyam_PG2" ;
+		hyam_PG2:_FillValue = 3.402824e+33f ;
+	float hybi_PG2(ilev) ;
+		hybi_PG2:units = "1" ;
+		hybi_PG2:long_name = "hybi_PG2" ;
+		hybi_PG2:_FillValue = 3.402824e+33f ;
+	float hybm_PG2(lev) ;
+		hybm_PG2:units = "1" ;
+		hybm_PG2:long_name = "hybm_PG2" ;
+		hybm_PG2:_FillValue = 3.402824e+33f ;
+	float lat_PG2(ncol) ;
+		lat_PG2:units = "1" ;
+		lat_PG2:long_name = "lat_PG2" ;
+		lat_PG2:_FillValue = 3.402824e+33f ;
+	float lon_PG2(ncol) ;
+		lon_PG2:units = "1" ;
+		lon_PG2:long_name = "lon_PG2" ;
+		lon_PG2:_FillValue = 3.402824e+33f ;
+...
+
+data:
+
+ time = 31 ;
+}
+
+``` 
 
 ## Initial condition file 
 
