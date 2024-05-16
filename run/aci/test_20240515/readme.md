@@ -5,7 +5,6 @@
 - nsource
 - ndropmix
 - nc_inp_to_aci
-# ccn diagnostics
 - ccn_0p02
 - ccn_0p05
 - ccn_0p1 
