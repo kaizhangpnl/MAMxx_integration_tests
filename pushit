@@ -1,5 +1,6 @@
 #!/bin/csh 
 
+git pull 
 git add pushit 
 git add script
 git add data 
