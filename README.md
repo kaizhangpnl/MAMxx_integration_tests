@@ -11,7 +11,7 @@ A space to exchange data, scripts, and analysis for MAMxx developent, integratio
 
 ### aerosol optics
 
-- https://github.com/E3SM-Project/scream/pull/2718
+https://github.com/E3SM-Project/scream/pull/2718
 
 The new feature, when turned on in the simulation, will 
 
@@ -49,12 +49,38 @@ Vertical diffusion of (interstitial) aerosols and cloud droplets are currently a
 
 ### wetdep 
 
-- https://github.com/E3SM-Project/scream/pull/2848 
+https://github.com/E3SM-Project/scream/pull/2848 
+
+The new feature, when turned on in the simulation together with "aci", will
+
+- read gas and aerosol tracers from the new initial condition file;
+- transport the these tracers (homme & shoc);
+- if "aci" is activated, cloud-borne aerosol concentrations will be updated. This will subsequently affect both in-cloud and below-cloud scavenging.
+- calculate the aerosol dry size
+- calculate aerosol water uptake (aerosol water content, wet size, & wet density)
+- make wet removal calculation; currently wet removal is only from stratiform clouds.
+  
+Note that the wetdep feature can be turned on alone without "aci", but in this case there won't be in-cloud scavenging (cloud-borne aerosol concentrations are zero).
+
+The aerosol and gas tracers are "prognostic" since their values are affected by transport. The aerosol tracers affect droplet and ice nucleation (if "aci" is turned on) and they are removed by wet scavenging.
+
+If the feature ("aci"+"wetdep") is turned on, the aerosols will affect droplet and ice nucleation, and subsequent cloud microphysics calculation. On the other hand, compared to the "aci" feature, no new coupling (that affects meteorological fields) is added, except that aerosol concentrations will be changed by wetdep and this will affect "aci" calculation in the next model time step.
+
+The "wetdep" feature alone only changes aerosol concentrations and does not directly affect meteorological fields.
+
+We evaluated the aerosol burden changes and wet deposition flux in the simulation. The simulated BC aerosol burden decreases by 23% and SO4 burden by 31% in 5 days. Note that we only consider wet removal of aerosols in our simulation (no other sinks). Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP
+
+Additional notes 
+
+- Because EAMxx doesn't have a deep convection parameterization, aerosol wet scavenging is only considered for stratiform clouds/precipitation.
+- Also, the precipitation used to calculate wet removal only includes rain, but not frozen precipitation (snow-like). -
+- To improve it, P3 code needs to be revised. 
+
 
 ### drydep
 
-- https://github.com/E3SM-Project/scream/pull/2894
+https://github.com/E3SM-Project/scream/pull/2894
 
 ### emission
 
-- https://github.com/E3SM-Project/scream/pull/2944
+https://github.com/E3SM-Project/scream/pull/2944
