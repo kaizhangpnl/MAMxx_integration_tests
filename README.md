@@ -81,6 +81,44 @@ Additional notes
 
 https://github.com/E3SM-Project/scream/pull/2894
 
+> Feature description
+
+The new feature (when turned on) will 
+
+1. read gas and aerosol tracers from the new initial condition file; 
+2. transport the these tracers (homme & shoc); 
+3. make dry removal calculation 
+
+The aerosol and gas tracers are "prognostic" since their values are affected by transport. When this feature (drydep) is turned on, the aerosol tracers (both interstitial and cloud-borne) are affected by dry removal. 
+
+No new coupling (that affects meteorological fields) is added, except that aerosol concentrations will be changed by drydep and this will affect "aci" calculation in the next model time step. The "drydep" feature alone only changes aerosol concentrations and does not directly affect meteorological fields. 
+
+The simulated changes in aerosol burden and dry deposition fluxes were assessed (here we only consider dry removal of aerosols). Over a period of five days, the simulated burden of black carbon (BC) aerosols decreased by 21% [(figure)](https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/drydep/figure_mam_drydep_surf_BURDENBC_daily_avg.pdf), while the dust burden declined by 43%  [(figure)](https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/drydep/figure_mam_drydep_surf_BURDENDST_daily_avg.pdf). The higher dry removal rate for dust is consistent with expectations, as the dry deposition flux accounts for sedimentation, a significant sink for larger dust particles. The dry removal rate for sea salt appears to be underestimated, with the burden decreasing by only 18% over the same five-day period [(figure)](https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/drydep/figure_mam_drydep_surf_BURDENSS_daily_avg.pdf). On the other hand, with the idealized configuration and short simulation, it's hard to tell whether this is correct or wrong. 
+
+Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/drydep/ 
+
+> Additional notes
+
+1. Available diagnostics output fields: 
+
+```
+      - deposition_flux_of_cloud_borne_aerosols
+      - deposition_flux_of_interstitial_aerosols
+```
+
+   The dry deposition flux includes both turbulent dry deposition at the surface and sedimentation flux. In the future, it would be nice to diagnose the two (turbulent dry deposition and sedimentation) separately. 
+
+2. Process coupling
+
+The process coupling between emission, dry deposition, and turbulent transport needs to be revisited when all of the aerosol processes/parameterizations have been integrated into EAMxx. 
+
+3. Related drydep code (aerosol only) in MAMxx repository : 
+
+- https://github.com/eagles-project/mam4xx/blob/main/src/mam4xx/drydep.hpp
+- https://github.com/eagles-project/mam4xx/blob/main/src/mam4xx/spitfire_transport.hpp
+
+4. This PR only handles the dry deposition calculation for aerosols, but not for gases.  
+
 ### emission
 
 https://github.com/E3SM-Project/scream/pull/2944
