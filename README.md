@@ -25,9 +25,27 @@ The aerosol and gas tracers are "prognostic" since their values are affected by 
 
 ### aci 
 
-- https://github.com/E3SM-Project/scream/pull/2794
+https://github.com/E3SM-Project/scream/pull/2794
 
+The new feature, when turned on in the simulation, will
 
+- read gas and aerosol tracers from the new initial condition file;
+- transport the these tracers (homme & shoc);
+- droplet nucleation and ice nucleation:
+  - droplet number tendencies due to aerosol activation and vertical diffusion (after tms, shoc, cldFraction, but before p3 cloud microphysics)
+  - provisional ice crystal number from the cirrus ice nucleation
+  - ice crystal number tendency from the heterogeneous ice nucleation
+- apply the droplet number tendencies and the provisional ice crystal number in p3 cloud microphysics
+  
+The aerosol and gas tracers are "prognostic" since their values are affected by transport and they affect droplet and ice nucleation, but they are otherwise passive tracers (not scavenged by clouds, no affect on radiation, no active aerosol microphysics and other source/sink calculations).
+
+If the feature is turned on, the aerosols will affect droplet and ice nucleation, and subsequent cloud microphysics calculation. The original model uses SPA (monthly mean fields) to provide CCN concentrations, while the new feature uses aerosol fields initialized from initial condition data and transported by model to calculate the aerosol properties and droplet nucleation/vertical diffusion rates. 
+
+The new feature, when turned on, will affect the cloud microphysics calculation through droplet and ice nucleation. Note that the heterogeneous ice nucleation tendencies are not applied in p3 yet.
+
+We evaluated the CCN fields at various supersaturation, droplet nucleation/vertical diffusion tendency, and droplet and ice number. The simulated CCN concentrations and their time evolution look reasonable.
+
+Vertical diffusion of (interstitial) aerosols and cloud droplets are currently also calculated by SHOC (in addition to ndrop). This needs to be addressed to avoid double counting.
 
 ### wetdep 
 
