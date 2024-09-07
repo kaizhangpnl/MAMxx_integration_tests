@@ -2,7 +2,7 @@
 
 A space to exchange data, scripts, and analysis for MAMxx developent, integration, and evaluation. 
 
-# Table of contents
+## Table of contents
 1. [MAMxx tests and evaluations](#tests)
 2. [MAMxx PRs](#pullrequest)
     1. [Aerosol Optics](#aeropt)
