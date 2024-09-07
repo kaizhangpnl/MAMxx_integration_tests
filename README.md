@@ -9,7 +9,7 @@ A space to exchange data, scripts, and analysis for MAMxx developent, integratio
   
 ## MAMxx PRs 
 
-### aerosol optics
+### Aerosol Optics
 
 https://github.com/E3SM-Project/scream/pull/2718
 
@@ -23,7 +23,7 @@ The new feature, when turned on in the simulation, will
   
 The aerosol and gas tracers are "prognostic" since their values are affected by transport and they change the aerosol optics that affects the radiation, but they are otherwise passive tracers (no interaction with clouds, no active aerosol microphysics and other source/sink calculations). The original model uses SPA (monthly mean fields) to calculate aerosol optical properties, while the new feature uses aerosol fields initialized from initial condition data and transported by model to calculate the aerosol properties. 
 
-### aci 
+### Aerosol Cloud Interaction  
 
 https://github.com/E3SM-Project/scream/pull/2794
 
@@ -47,7 +47,7 @@ We evaluated the CCN fields at various supersaturation, droplet nucleation/verti
 
 Vertical diffusion of (interstitial) aerosols and cloud droplets are currently also calculated by SHOC (in addition to ndrop). This needs to be addressed to avoid double counting.
 
-### wetdep 
+### Wet removal  
 
 https://github.com/E3SM-Project/scream/pull/2848 
 
@@ -77,7 +77,7 @@ Additional notes
 - To improve it, P3 code needs to be revised. 
 
 
-### drydep
+### Dry removal 
 
 https://github.com/E3SM-Project/scream/pull/2894
 
@@ -119,7 +119,7 @@ The process coupling between emission, dry deposition, and turbulent transport n
 
 4. This PR only handles the dry deposition calculation for aerosols, but not for gases.  
 
-### emission
+### Emission 
 
 https://github.com/E3SM-Project/scream/pull/2944
 
@@ -166,6 +166,9 @@ ne512pg2
 ne1024pg2
 ```
 RRM simulations are not supported yet. 
+
+## Microphysics & Chemistry 
+
 
 
 
