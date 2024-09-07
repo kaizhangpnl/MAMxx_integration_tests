@@ -122,3 +122,50 @@ The process coupling between emission, dry deposition, and turbulent transport n
 ### emission
 
 https://github.com/E3SM-Project/scream/pull/2944
+
+> Feature description
+
+The new feature (when turned on) will 
+
+1. read gas and aerosol tracers from the new initial condition file; 
+2. transport the these tracers (homme & shoc); 
+3. read prescribed surface emission fluxes from input data 
+4. update the surface concentrations of interstitial aerosols (mass/number) and trace gases (DMS & SO2) 
+
+The aerosol and gas tracers are "prognostic" since their values are affected by transport. When this feature is turned on, the aerosol tracers (interstitial only) are affected by surface emission. 
+
+No new coupling (that directly affects meteorological fields) is added, except that aerosol concentrations will be changed by surface emission. If this feature is coupled with aci and/or aerosol optics, it will affect the aerosol effect on clouds and radiation. The surface emission feature alone only changes aerosol and trace gas concentrations and does not directly affect meteorological fields. 
+
+The simulated surface emission fluxes and the changes in aerosol burden were assessed. The simulated spatial distributions of the emission fluxes for tracer gases (DMS & SO2) and interstitial aerosols agree with the input emission data. The simulated tracer gas & aerosol burden increases due to emissions (especially patterns) look reasonable. 
+
+The feature is also tested (coupled) with other mamxx features (see link below). No obvious problem is identified. 
+
+Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/emis/ 
+
+> Additional notes
+
+1. Available diagnostics output fields: 
+
+```
+      - constituent_fluxes(time, ncol, num_phys_constituents)
+```
+
+num_phys_constituents = 40 
+
+2. Process coupling
+
+The process coupling between emission, dry deposition, and turbulent transport needs to be revisited when all of the aerosol processes/parameterizations have been integrated into EAMxx. 
+
+3. Emission data handling
+
+With the current implementation, MAMxx will read emission data on the model native grid (ne4pg2 or ne30pg2). For resolutions other than ne4pg2 and ne30pg2, the model will make online remapping with pre-calculated mapping weights. Supported resolutions are 
+```
+ne120pg2
+ne256pg2
+ne512pg2
+ne1024pg2
+```
+RRM simulations are not supported yet. 
+
+
+
