@@ -2,14 +2,23 @@
 
 A space to exchange data, scripts, and analysis for MAMxx developent, integration, and evaluation. 
 
-## MAMxx tests and evaluations 
+# Table of contents
+1. [MAMxx tests and evaluations](#tests)
+2. [MAMxx PRs](#pullrequest)
+    1. [Aerosol Optics](#aeropt)
+    1. [Aerosol Cloud Interaction](#aci)
+    1. [Wet Removal](#wetdep)
+    1. [Dry Removal](#drydep)
+    1. [Emission](#emis)
+
+## MAMxx tests and evaluations <a name="tests"></a>
 
 - https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/
 - https://github.com/kaizhangpnl/MAMxx_share/tree/main/diag
   
-## MAMxx PRs 
+## MAMxx PRs <a name="pullrequest"></a>
 
-### Aerosol Optics
+### Aerosol Optics <a name="aeropt"></a>
 
 https://github.com/E3SM-Project/scream/pull/2718
 
@@ -23,7 +32,7 @@ The new feature, when turned on in the simulation, will
   
 The aerosol and gas tracers are "prognostic" since their values are affected by transport and they change the aerosol optics that affects the radiation, but they are otherwise passive tracers (no interaction with clouds, no active aerosol microphysics and other source/sink calculations). The original model uses SPA (monthly mean fields) to calculate aerosol optical properties, while the new feature uses aerosol fields initialized from initial condition data and transported by model to calculate the aerosol properties. 
 
-### Aerosol Cloud Interaction  
+### Aerosol Cloud Interaction  <a name="aci"></a>
 
 https://github.com/E3SM-Project/scream/pull/2794
 
@@ -47,7 +56,7 @@ We evaluated the CCN fields at various supersaturation, droplet nucleation/verti
 
 Vertical diffusion of (interstitial) aerosols and cloud droplets are currently also calculated by SHOC (in addition to ndrop). This needs to be addressed to avoid double counting.
 
-### Wet removal  
+### Wet removal  <a name="wetdep"></a>
 
 https://github.com/E3SM-Project/scream/pull/2848 
 
@@ -77,7 +86,7 @@ Additional notes
 - To improve it, P3 code needs to be revised. 
 
 
-### Dry removal 
+### Dry removal <a name="drydep"></a>
 
 https://github.com/E3SM-Project/scream/pull/2894
 
@@ -119,7 +128,7 @@ The process coupling between emission, dry deposition, and turbulent transport n
 
 4. This PR only handles the dry deposition calculation for aerosols, but not for gases.  
 
-### Emission 
+### Emission <a name="emis"></a>
 
 https://github.com/E3SM-Project/scream/pull/2944
 
