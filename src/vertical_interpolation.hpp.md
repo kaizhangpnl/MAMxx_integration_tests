@@ -3,7 +3,7 @@
 
 https://github.com/eagles-project/mam4xx/tree/main/src/mam4xx/vertical_interpolation.hpp 
 
-## Description 
+## ChatGPT Description 
 
 This header file contains two functions for vertical interpolation and rebinning, designed for parallel execution in atmospheric models. Here’s a breakdown of the key elements:
 
@@ -38,6 +38,4 @@ Notes:
 
 	•	Parallelization: Both functions use Kokkos’ parallel execution model (TeamVectorRange) for performance.
 	•	Error Handling: Division by zero is explicitly checked using EKAT_KERNEL_ASSERT_MSG, ensuring stability.
-
-This implementation is designed for efficiency and accuracy in large-scale atmospheric models, especially in the MAM (Model for Aerosol Microphysics) context. Let me know if you need more details on any part!
 
