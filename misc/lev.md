@@ -1,5 +1,11 @@
 ## Vertical coordinate information in EAMxx output 
 
+## e3sm-diag need 
+
+The longname of "lev" is needed by e3sm_diag. 
+
+- https://github.com/E3SM-Project/e3sm_diags/blob/3f5b03627aef703b4f7d8463cd5faed3c0806566/e3sm_diags/driver/utils/general.py#L105-L130.
+ 
 ## Standard information from EAM 
 
 "lev" information is needed for e3sm_diags. 
