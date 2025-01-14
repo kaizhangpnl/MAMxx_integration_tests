@@ -177,7 +177,7 @@ ne1024pg2
 ```
 RRM simulations are not supported yet. 
 
-## Microphysics & Chemistry <a name="microchem"></a>
+### Microphysics & Chemistry <a name="microchem"></a>
 
 The new "microphysics" feature contains calculations for 5 processes (see PR description). When it is turned on, the model will
 
@@ -199,7 +199,7 @@ This feature alone only changes aerosol and trace gas concentrations and does no
 
 The team has performed many sensitivity simulations to evaluate the impact of individual features (see PR description). Due to the idealized configuration of the current model feature, we can only evaluate the feature impact qualitatively. Therefore, I think the current evaluations are sufficient. It would be more meaningful to perform the aerosol mass and number budget analysis when we can run a longer simulation with all the necessary output for process rate diagnostics. These will be implemented in future PRs.
 
-### Evaluation 
+#### Evaluation 
 
 - Impact of elevated emissions. Compared to Fig. 2 (in PR description above), the larger SO2 burden in Fig. 1 shows the impact of the elevated emissions (similar differences between Figs 9 and 10). The associated sulfate aerosol burden differences are also noticeable.
 - Impact of gas/aqueous chemistry. In Fig. 2 (without elevated emissions), we see expected SO2 decreases over time due to chemical sink (oxidized to H2SO4). Compared to Fig. 2, Fig. 4 shows expected larger SO2 burden when aqueous chemistry is switched off.
@@ -208,7 +208,7 @@ The team has performed many sensitivity simulations to evaluate the impact of in
 
 Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/micro/
 
-### Additional notes
+#### Additional notes
 
 In the future, it would be useful to
 
