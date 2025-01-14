@@ -12,6 +12,18 @@ A space to exchange data, scripts, and analysis for MAMxx developent, integratio
     5. [Emission](#emis)
     6. [Microphysics and Chemistry](#microchem)
 
+## E3SM repo 
+
+https://github.com/E3SM-Project/E3SM/
+
+## original SCREAM repo (frozen)
+
+https://github.com/E3SM-Project/scream
+
+## MAM repo 
+
+https://github.com/eagles-project/mam4xx
+
 ## Useful pages from EAGLES 
 
 - https://eagles-project.atlassian.net/wiki/spaces/Computation/pages/1760428034/EAMxx-MAM4xx+Global+simulations+using+CIME+workflow
