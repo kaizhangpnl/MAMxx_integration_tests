@@ -16,12 +16,16 @@ A space to exchange data, scripts, and analysis for MAMxx developent, integratio
 
 - https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/
 - https://github.com/kaizhangpnl/MAMxx_share/tree/main/diag
-  
+
 ## MAMxx PRs <a name="pullrequest"></a>
 
 ### Aerosol Optics <a name="aeropt"></a>
 
+#### PR 
+
 https://github.com/E3SM-Project/scream/pull/2718
+
+#### Feature description 
 
 The new feature, when turned on in the simulation, will 
 
@@ -35,7 +39,11 @@ The aerosol and gas tracers are "prognostic" since their values are affected by 
 
 ### Aerosol Cloud Interaction  <a name="aci"></a>
 
+#### PR 
+
 https://github.com/E3SM-Project/scream/pull/2794
+
+#### Feature description 
 
 The new feature, when turned on in the simulation, will
 
@@ -59,7 +67,11 @@ Vertical diffusion of (interstitial) aerosols and cloud droplets are currently a
 
 ### Wet removal  <a name="wetdep"></a>
 
+#### PR 
+
 https://github.com/E3SM-Project/scream/pull/2848 
+
+#### Feature description 
 
 The new feature, when turned on in the simulation together with "aci", will
 
@@ -89,9 +101,11 @@ Additional notes
 
 ### Dry removal <a name="drydep"></a>
 
+#### PR 
+
 https://github.com/E3SM-Project/scream/pull/2894
 
-> Feature description
+#### Feature description
 
 The new feature (when turned on) will 
 
@@ -107,7 +121,7 @@ The simulated changes in aerosol burden and dry deposition fluxes were assessed 
 
 Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/drydep/ 
 
-> Additional notes
+#### Additional notes
 
 1. Available diagnostics output fields: 
 
@@ -131,9 +145,11 @@ The process coupling between emission, dry deposition, and turbulent transport n
 
 ### Emission <a name="emis"></a>
 
+#### PR 
+
 https://github.com/E3SM-Project/scream/pull/2944
 
-> Feature description
+### Feature description
 
 The new feature (when turned on) will 
 
@@ -152,7 +168,7 @@ The feature is also tested (coupled) with other mamxx features (see link below).
 
 Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/emis/ 
 
-> Additional notes
+###  Additional notes
 
 1. Available diagnostics output fields: 
 
@@ -178,6 +194,12 @@ ne1024pg2
 RRM simulations are not supported yet. 
 
 ### Microphysics & Chemistry <a name="microchem"></a>
+
+#### PR 
+
+https://github.com/E3SM-Project/scream/pull/3013
+
+#### Notes  
 
 The new "microphysics" feature contains calculations for 5 processes (see PR description). When it is turned on, the model will
 
