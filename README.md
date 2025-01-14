@@ -12,6 +12,13 @@ A space to exchange data, scripts, and analysis for MAMxx developent, integratio
     5. [Emission](#emis)
     6. [Microphysics and Chemistry](#microchem)
 
+## Useful pages from EAGLES 
+
+- https://eagles-project.atlassian.net/wiki/spaces/Computation/pages/1760428034/EAMxx-MAM4xx+Global+simulations+using+CIME+workflow
+- https://eagles-project.atlassian.net/wiki/spaces/Computation/pages/1832452098/A+script+for+global+simulation+with+EAMxx-MAM4xx 
+- https://eagles-project.atlassian.net/wiki/spaces/Computation/pages/1944387602/Running+Standalone+alone+EAMxx-MAM4xx+tests
+- https://eagles-project.atlassian.net/wiki/spaces/Computation/pages/1847787521/TODO+Remaining+tasks+for+MAM4xx+integration
+
 ## MAMxx tests and evaluations <a name="tests"></a>
 
 - https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/
