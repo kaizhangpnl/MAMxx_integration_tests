@@ -179,6 +179,43 @@ RRM simulations are not supported yet.
 
 ## Microphysics & Chemistry <a name="microchem"></a>
 
+The new "microphysics" feature contains calculations for 5 processes (see PR description). When it is turned on, the model will
 
+- read gas and aerosol tracers from the new initial condition file;
+- transport the these tracers (homme & shoc);
+- update gas species concentrations due to gas phase chemistry
+- update gas species & cloud-borne aerosol concentrations due to aqueous phase chemistry
+- read prescribed elevated emission fluxes from input data
+- update aerosol & gas species concentrations due to aerosol microphysics (condensation, renaming, nucleation, coagulation, aging)
+- update gas species concentration due to LINOZ O3 chemistry
 
+The aerosol and gas tracers are "prognostic". When this feature is turned on, the aerosol & gas tracers are affected by elevated emissions, gas-phase chemistry, aqueous chemistry, aerosol microphysics, and transport.
+
+Due to the idealized configuration with this feature, there is no benchmark to compare with. On the other hand, the temporal evolution of aerosol & gas burden can be assessed.
+
+No new coupling (that directly affects meteorological fields) is added, except that aerosol & gas concentrations will be changed. If this feature is coupled with aci and/or aerosol optics, it will affect the aerosol effect on clouds and radiation.
+
+This feature alone only changes aerosol and trace gas concentrations and does not directly affect meteorological fields. When coupled with aci and aerosol optics, it will affect the climate. However, the current tests are short idealized simulations and the impact on climate is not evaluated.
+
+The team has performed many sensitivity simulations to evaluate the impact of individual features (see PR description). Due to the idealized configuration of the current model feature, we can only evaluate the feature impact qualitatively. Therefore, I think the current evaluations are sufficient. It would be more meaningful to perform the aerosol mass and number budget analysis when we can run a longer simulation with all the necessary output for process rate diagnostics. These will be implemented in future PRs.
+
+### Evaluation 
+
+- Impact of elevated emissions. Compared to Fig. 2 (in PR description above), the larger SO2 burden in Fig. 1 shows the impact of the elevated emissions (similar differences between Figs 9 and 10). The associated sulfate aerosol burden differences are also noticeable.
+- Impact of gas/aqueous chemistry. In Fig. 2 (without elevated emissions), we see expected SO2 decreases over time due to chemical sink (oxidized to H2SO4). Compared to Fig. 2, Fig. 4 shows expected larger SO2 burden when aqueous chemistry is switched off.
+- Impact of aerosol microphysics. In Fig. 2, we see expected increases of accumulation mode sulfate mass and the aging conversion from primary carbon mode to accumulation mode BC and POM. We also see expected very small changes in marine organic and sea salt aerosols.
+- The feature is also tested (coupled) with other mamxx features. The spatial distributions of aerosol mass/number and gas concentrations are aslo assessed. No obvious problem is identified.
+
+Additional diagnostics can be found here: https://web.lcrc.anl.gov/public/e3sm/diagnostic_output/ac.kzhang/TMP/micro/
+
+### Additional notes
+
+In the future, it would be useful to
+
+1. Add diagnostics output fields for aerosol/gas microphysical/chemical process rates, so that we can perform a detailed aerosol mass and number budget analysis. 2D diagnostics are sufficient for the aerosol budget analysis. The corresponding Fortran variables can be found in:
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eam/src/chemistry/modal_aero/modal_aero_amicphys.F90 and
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eam/src/chemistry/modal_aero/sox_cldaero_mod.F90 by searching “outfld”.
+
+2. Add diagnostics output fields for column-integrated elevated aerosol emission fluxes.
+3. Figure out an efficient & convenient way to verify the mass conservation of individual species.
 
