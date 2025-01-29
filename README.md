@@ -261,3 +261,13 @@ In the future, it would be useful to
 2. Add diagnostics output fields for column-integrated elevated aerosol emission fluxes.
 3. Figure out an efficient & convenient way to verify the mass conservation of individual species.
 
+### Vertical mixing control 
+
+https://github.com/E3SM-Project/E3SM/pull/6926
+
+### Gas dry deposition and bug fix for aerosol dry deposition 
+
+https://github.com/E3SM-Project/E3SM/pull/6929
+
+
+
