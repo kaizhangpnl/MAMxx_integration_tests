@@ -57,6 +57,15 @@ The new feature, when turned on in the simulation, will
   
 The aerosol and gas tracers are "prognostic" since their values are affected by transport and they change the aerosol optics that affects the radiation, but they are otherwise passive tracers (no interaction with clouds, no active aerosol microphysics and other source/sink calculations). The original model uses SPA (monthly mean fields) to calculate aerosol optical properties, while the new feature uses aerosol fields initialized from initial condition data and transported by model to calculate the aerosol properties. 
 
+#### Output 
+
+```
+      - aero_g_sw
+      - aero_ssa_sw
+      - aero_tau_sw
+      - aero_tau_lw
+```
+
 ### Aerosol Cloud Interaction  <a name="aci"></a>
 
 #### PR 
@@ -84,6 +93,25 @@ The new feature, when turned on, will affect the cloud microphysics calculation 
 We evaluated the CCN fields at various supersaturation, droplet nucleation/vertical diffusion tendency, and droplet and ice number. The simulated CCN concentrations and their time evolution look reasonable.
 
 Vertical diffusion of (interstitial) aerosols and cloud droplets are currently also calculated by SHOC (in addition to ndrop). This needs to be addressed to avoid double counting.
+
+#### Output 
+
+```
+      - ccn_0p02
+      - ccn_0p05
+      - ccn_0p1
+      - ccn_0p2
+      - ccn_0p5
+      - ccn_1p0
+      - nc_inp_to_aci
+      - nsource
+      - ndropmix
+      - nc_nuceat_tend
+      - ni_activated
+      - hetfrz_immersion_nucleation_tend
+      - hetfrz_contact_nucleation_tend
+      - hetfrz_deposition_nucleation_tend
+```
 
 ### Wet removal  <a name="wetdep"></a>
 
@@ -118,6 +146,16 @@ Additional notes
 - Also, the precipitation used to calculate wet removal only includes rain, but not frozen precipitation (snow-like). -
 - To improve it, P3 code needs to be revised. 
 
+#### Output
+
+```
+      - dgncur_a
+      - qaerwat
+      - wetdens
+      - dgnumwet
+      - aerdepwetis
+      - aerdepwetcw
+```
 
 ### Dry removal <a name="drydep"></a>
 
