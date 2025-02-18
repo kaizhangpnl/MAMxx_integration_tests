@@ -315,24 +315,23 @@ https://github.com/E3SM-Project/E3SM/pull/6947
 
 #### Modified code 
 
-```
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_ice_classical_nucleation_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/eti/p3_ice_classical_nucleation_impl.cpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/eamxx_p3_process_interface.cpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_update_prognostics_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_main_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_main_impl_part2.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/disp/p3_main_impl_disp.cpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/disp/p3_main_impl_part2_disp.cpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/p3_functions.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_back_to_cell_average_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_back_to_cell_average_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_ice_supersat_conservation_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_conservation_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_nc_conservation_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_ni_conservation_impl.hpp
-https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/cime_config/namelist_defaults_scream.xml
-```
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_ice_classical_nucleation_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/eti/p3_ice_classical_nucleation_impl.cpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/eamxx_p3_process_interface.cpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_update_prognostics_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_main_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_main_impl_part2.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/disp/p3_main_impl_disp.cpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/disp/p3_main_impl_part2_disp.cpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/p3_functions.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_back_to_cell_average_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_back_to_cell_average_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_ice_supersat_conservation_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_conservation_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_nc_conservation_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/p3/impl/p3_ni_conservation_impl.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/cime_config/namelist_defaults_scream.xml
+
 
 
 #### Notes  
