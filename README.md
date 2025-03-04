@@ -344,5 +344,33 @@ To switch on the feature, add the following line to runscript:
 ```
 
 
+### Bug in gas drydep <a name="bug_gas_drydep"></a>
+
+https://github.com/E3SM-Project/E3SM/blob/8e9685763275d531bb45317eab6822fcc68100dc/components/eamxx/src/physics/mam/eamxx_mam_microphysics_process_interface.cpp#L988
+
+```
+        for(int ispc = offset_aerosol; ispc < mam4::pcnst; ++ispc) {
+          constituent_fluxes(icol, ispc) = dflx[ispc - offset_aerosol];
+        }
+```
+
+should be 
+
+```
+        for(int ispc = offset_aerosol; ispc < mam4::pcnst; ++ispc) {
+          constituent_fluxes(icol, ispc) = constituent_fluxes(icol, ispc) - dflx[ispc - offset_aerosol];
+        }
+```
+
+This was likely caused by a confusion about the following two lines in the original Fortran code: 
+
+```
+mo_gas_phase_chemdr.F90
+         cflx(:ncol,m)      = cflx(:ncol,m) - sflx(:ncol,n)
+         drydepflx(:ncol,m) = sflx(:ncol,n)
+```
+
+
+
 
 
