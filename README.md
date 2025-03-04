@@ -346,6 +346,8 @@ To switch on the feature, add the following line to runscript:
 
 ### Bug in gas drydep <a name="bug_gas_drydep"></a>
 
+Balwinder found a bug: 
+
 https://github.com/E3SM-Project/E3SM/blob/8e9685763275d531bb45317eab6822fcc68100dc/components/eamxx/src/physics/mam/eamxx_mam_microphysics_process_interface.cpp#L988
 
 ```
@@ -369,6 +371,10 @@ mo_gas_phase_chemdr.F90
          cflx(:ncol,m)      = cflx(:ncol,m) - sflx(:ncol,n)
          drydepflx(:ncol,m) = sflx(:ncol,n)
 ```
+
+Note that the drydep of gas species is considered on top of cflx. When emission is called before microphysics and gas drydep, it won’t affect the aerosol concentrations in the current time step (since gas drydep is added to cflx after aerosol microphysics), but it will affect them in the next time step (since gas drydep is ignored).
+
+
 
 
 
