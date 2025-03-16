@@ -374,6 +374,19 @@ mo_gas_phase_chemdr.F90
 
 Note that the drydep of gas species is considered on top of cflx. When emission is called before microphysics and gas drydep, it won’t affect the aerosol concentrations in the current time step (since gas drydep is added to cflx after aerosol microphysics), but it will affect them in the next time step (since gas drydep is ignored).
 
+### bugfix in mo_photo.hpp 
+
+- https://github.com/E3SM-Project/E3SM/pull/7126
+- https://github.com/eagles-project/mam4xx/compare/07badaf70335eeb0753c4c4e68e3b7e77f6a6ed3...a143adf51c691c0cdd85821d32746c01d7e1d821#diff-a8d7cdcd1d306ce77b9d6c0476ce83ac58f726f339bda6d681550390f113a4c3 
+
+### New compsets 
+
+- https://github.com/E3SM-Project/E3SM/pull/7131 
+
+```
+F2010-EAMxx-MAM4xx
+F2010-EAMxx-MAM4xx-MPASSI
+```
 
 
 
