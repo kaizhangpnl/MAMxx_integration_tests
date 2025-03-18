@@ -211,7 +211,9 @@ https://github.com/E3SM-Project/scream/pull/2944
 
 - https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_process_interface.hpp
 - https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_process_interface.cpp
-- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_functions.hpp 
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_functions.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_constituent_fluxes_interface.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_constituent_fluxes_functions.hpp
 
 `eamxx_mam_srf_and_online_emissions_process_interface` is the overall interface for reading all surface emissions. The code to set up and read those emissions is in `srf_emission` (just the headers), and `srf_emission_impl` (body of the functions).
 
