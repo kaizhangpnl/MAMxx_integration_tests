@@ -207,6 +207,20 @@ The process coupling between emission, dry deposition, and turbulent transport n
 
 https://github.com/E3SM-Project/scream/pull/2944
 
+### Code 
+
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_process_interface.hpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_process_interface.cpp
+- https://github.com/E3SM-Project/E3SM/blob/master/components/eamxx/src/physics/mam/eamxx_mam_srf_and_online_emissions_functions.hpp 
+
+`eamxx_mam_srf_and_online_emissions_process_interface` is the overall interface for reading all surface emissions. The code to set up and read those emissions is in `srf_emission` (just the headers), and `srf_emission_impl` (body of the functions).
+
+### Emission data
+
+- https://github.com/eagles-project/scream/blob/767c2a0c08c0b41409ce95ba465c9d56fb32f355/components/eamxx/cime_config/namelist_defaults_scream.xml#L296-L327
+
+The emission are for present-day climatology (time average of 2005-2014) and they are remapped from the E3SM input data. 
+
 ### Feature description
 
 The new feature (when turned on) will 
