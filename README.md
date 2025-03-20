@@ -407,9 +407,8 @@ F2010-EAMxx-MAM4xx-MPASSI
 ### top_lev 
 
 - https://github.com/E3SM-Project/E3SM/pull/7141 
-
-For 128-layer model, `top_level_mam4xx` = 0 
-For 72-layer model, `top_level_mam4xx` = 6 
+- `top_level_mam4xx` = 0 for 128-layer model. 
+- `top_level_mam4xx` = 6 for 72-layer model. 
 
 
 
