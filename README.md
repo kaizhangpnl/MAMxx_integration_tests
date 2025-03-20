@@ -410,8 +410,8 @@ F2010-EAMxx-MAM4xx-MPASSI
 - https://github.com/E3SM-Project/E3SM/blob/f1d3265ac4562eb023e706443a4c7b162fe80694/components/eamxx/cime_config/namelist_defaults_eamxx.xml#L267-L268
 
 ```
-`top_level_mam4xx` = 0 for 128-layer model. 
-`top_level_mam4xx` = 6 for 72-layer model. 
+top_level_mam4xx = 0 for 128-layer model. 
+top_level_mam4xx = 6 for 72-layer model. 
 ```
 
 
