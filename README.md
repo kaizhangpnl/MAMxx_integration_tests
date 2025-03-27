@@ -419,6 +419,7 @@ top_level_mam4xx = 6 for 72-layer model.
 Replacing `TracerAdvection::DynamicsOnly` with `TracerAdvection::DynamicsAndTurbulence` will turn off the diffusional transport of interstitial aerosols in SHOC. 
 
 - https://github.com/E3SM-Project/E3SM/blob/6e0e7d4be88fdd886b346dee4af1fb95acfa9137/components/eamxx/src/physics/mam/eamxx_mam_generic_process_interface.cpp#L153-L161
+- https://github.com/E3SM-Project/E3SM/blob/8e0afec014270ffd738eac07a2c7ad14618cfea4/components/eamxx/src/share/atm_process/atmosphere_process.hpp#L354-L363
 - https://github.com/E3SM-Project/E3SM/blob/8e0afec014270ffd738eac07a2c7ad14618cfea4/components/eamxx/src/share/field/field_request.hpp#L18-L21
 
 ### PR to avoid mixing nc in SHOC 
