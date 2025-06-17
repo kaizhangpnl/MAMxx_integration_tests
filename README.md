@@ -10,7 +10,7 @@ https://github.com/E3SM-Project/E3SM/
 
 https://github.com/E3SM-Project/scream
 
-### MAM repo 
+### MAM4xx repo 
 
 https://github.com/eagles-project/mam4xx
 
