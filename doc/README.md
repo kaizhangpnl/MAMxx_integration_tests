@@ -434,4 +434,22 @@ Replacing `TracerAdvection::DynamicsOnly` with `TracerAdvection::DynamicsAndTurb
 
 - https://github.com/E3SM-Project/E3SM/pull/7161
 
+### PR for adding aqchem tendencies 
 
+- https://github.com/E3SM-Project/E3SM/pull/7394 
+- https://github.com/eagles-project/mam4xx/pull/446
+
+### PR for adding gaschem tendencies 
+
+- https://github.com/E3SM-Project/E3SM/pull/7459
+- https://github.com/eagles-project/mam4xx/pull/457 
+
+### PR for adding microphysics tendencies 
+
+- https://github.com/E3SM-Project/E3SM/pull/7452
+- https://github.com/eagles-project/mam4xx/pull/455
+
+### PR for updating lower/upper bounds 
+
+- https://github.com/E3SM-Project/E3SM/pull/7402
+  
