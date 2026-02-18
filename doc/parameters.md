@@ -20,8 +20,10 @@ PR in MAM4xx: https://github.com/eagles-project/mam4xx/pull/451
 
 ### Hygroscopicity of POM 
 
-Modified in the phys_property file. 
+Modified in the phys_property file. A larger POM kappa value will increase the wet removal of particles containing POM. 
 
+- E3SMv2: close to zero (same as in MAM4xx) 
+- E3SMv3: 0.06 
 
 ### Aqeous chemistry bug 
 
