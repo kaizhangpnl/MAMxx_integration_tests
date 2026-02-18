@@ -6,6 +6,7 @@
 n_so4_monolayers_pcage
 ```
 
+PR in MAM4xx: https://github.com/eagles-project/mam4xx/pull/451 
 
 ### Aqeous chemistry bug 
 
