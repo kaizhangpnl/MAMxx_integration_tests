@@ -25,9 +25,11 @@ Modified in the phys_property file. A larger POM kappa value will increase the w
 - E3SMv2: close to zero (same as in MAM4xx) 
 - E3SMv3: 0.06 
 
-### Aqeous chemistry bug 
+### Aqueous chemistry bug 
 
+In E3SM v1 and v2, total condensate (liquid +ice) mass mixing ratio was used for the SO2 aqueous chemistry process, instead of using only liquid water mass mixing ratio. P3 produces more ice mass which leads to a much larger sulfate production from aqueous chemistry compared to MG2. 
 
+https://github.com/E3SM-Project/E3SM/pull/5723 
 
 
 
