@@ -34,7 +34,7 @@ https://github.com/E3SM-Project/E3SM/pull/5723
 
 #### Update 
 
-This has been already fixed during porting. 
+This has been already fixed during porting. Confirmed by Oscar: https://e3sm.atlassian.net/wiki/spaces/EAMXX/pages/5992153093/Review+of+PR+5723+EAMxx+mam4xx+Implementation+and+cwat_liquid+Usage 
  
 ### DMS emission tuning 
 
