@@ -51,7 +51,9 @@ The coupling of aerosol/gas emissions, dry removal, and mixing has been updated 
 Wan, H., Zhang, K., Vogl, C. J., Woodward, C. S., Easter, R. C., Rasch, P. J., Feng, Y., and Wang, H.: Numerical coupling of aerosol emissions, dry removal, and turbulent mixing in the E3SM Atmosphere Model version 1 (EAMv1) – Part 1: Dust budget analyses and the impacts of a revised coupling scheme, Geosci. Model Dev., 17, 1387–1407, https://doi.org/10.5194/gmd-17-1387-2024, 2024. 
 
 
-## To be impletement in MAM4xx in the future 
+## To be impletemented in MAM4xx in the future 
+
+The following bug fixes are impletemented in E3SMv3 and some features are not yet avaialble in EAMxx/MAM4xx. 
 
 ### Bug fix for VBS vapor pressure calculation 
 
