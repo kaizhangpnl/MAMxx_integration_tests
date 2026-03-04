@@ -44,6 +44,8 @@ In E3SMv3, DMS emissions are enhanced by a factor of 2.
 
 ### Change to the coupling sequence of dry deposition 
 
+From Susannah
+
 The coupling of aerosol/gas emissions, dry removal, and mixing has been updated in E3SMv3 following Wan et al. (2024). This seems to be done in MAM4xx already. To be confirmed. 
 
 #### Reference: 
