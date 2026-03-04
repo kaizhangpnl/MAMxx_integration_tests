@@ -38,6 +38,8 @@ This has been already fixed during porting.
  
 ### DMS emission tuning 
 
+From Susannah
+
 In E3SMv3, DMS emissions are enhanced by a factor of 2. 
 
 ### Change to the coupling sequence of dry deposition 
@@ -51,4 +53,19 @@ Wan, H., Zhang, K., Vogl, C. J., Woodward, C. S., Easter, R. C., Rasch, P. J., F
 
 ## To be impletement in MAM4xx in the future 
 
+### Bug fix for VBS vapor pressure calculation 
+
+From Mingxuan and Hailong 
+
+https://github.com/E3SM-Project/E3SM/pull/6502
+
+### MAM4 part of the bug fix for coupling with ZM microphys and hetfrz ice nucleation  
+
+From Mingxuan and Hailong 
+
+https://github.com/E3SM-Project/E3SM/pull/7352 
+
+## Relevant confluencee pages 
+
+https://e3sm.atlassian.net/wiki/spaces/EAMXX/pages/6002475009/2026-03-04+mam4xx+eval+meeting+notes?atl_p=eyJpIjoiMzViNWJiYjEtZjUxYS1mODlkLTUyMDEtMWE1N2YxNTFhNDc1IiwidCI6InRvcExlZnRWaWV3Q29udGFpbmVyIiwic291cmNlIjoiZW1haWwiLCJlIjoiY2Mtbm90aWZpY2F0aW9uc19iYXRjaF91cGRhdGUifQ
 
