@@ -69,7 +69,7 @@ From Mingxuan and Hailong
 
 https://github.com/E3SM-Project/E3SM/pull/7352 
 
-## Relevant confluencee pages 
+## Relevant confluence pages 
 
 https://e3sm.atlassian.net/wiki/spaces/EAMXX/pages/6002475009/2026-03-04+mam4xx+eval+meeting+notes?atl_p=eyJpIjoiMzViNWJiYjEtZjUxYS1mODlkLTUyMDEtMWE1N2YxNTFhNDc1IiwidCI6InRvcExlZnRWaWV3Q29udGFpbmVyIiwic291cmNlIjoiZW1haWwiLCJlIjoiY2Mtbm90aWZpY2F0aW9uc19iYXRjaF91cGRhdGUifQ
 
